@@ -1,0 +1,221 @@
+:host {
+    width: 100%;
+    height: 100%;
+}
+
+mat-toolbar-row {
+    font-size: .8523rem !important;
+    color: white !important;
+}
+.header-wrapper {
+    color: white;
+}
+
+.mat-toolbar-1{
+    width: 100%;
+    padding-left: 5em;
+    padding-right: 5em;
+    background-color: #c2185b;
+}
+
+.brand-wrapper {
+    padding-left: 4em;
+    
+}
+
+.fa-shopping-cart{
+    font-size: 1rem;
+}
+
+h1 {
+    font-weight: bolder;
+}
+
+
+a{
+    text-decoration: none;
+    color: white !important;
+
+}
+
+li {
+    list-style: none ;
+}
+
+a:hover, a:focus {
+    color:black !important;
+}
+
+.cart-wrapper {
+    display: flex;
+    width: 30%;
+    flex-direction: row;
+    background-color: green;
+    border-radius: 3px !important;
+}
+
+.item-count {
+    height: 20px !important;
+    background-color: white;
+    color: black;
+    padding-top: 1.5px;
+    padding-bottom: 1.5px;
+    padding-right: 3px;
+    padding-left: 3px;
+    border-radius: 2px;
+    margin-left: 2px;
+}
+
+.cart-sub-wrapper {
+    display: inline-flex;
+}
+
+/* searchbar input field*/
+  .input-group-text {
+      border-top-left-radius: 0 !important;
+      border-bottom-left-radius: 0 !important;
+      border-left: none;
+      background-color: #fba100;
+      border-color: #fba100;
+  }
+
+  /*search bar div wrapper*/
+  .input-group{
+      width: 80%;
+  }
+
+  .btn-success-lg {
+      border-radius: 5px !important;
+      color: white;
+      font-size: .8123rem !important;
+  }
+
+
+  /* this section is for the sub header, or the call it the second mat-toolbar*/
+  .sub-header {
+      background-color: #ed017f!important;
+      height: 40px !important;
+      padding-left: 5em;
+  }
+
+
+
+
+
+
+  @media (max-width: 679px){
+
+    .header-wrapper {
+        color: white;
+        width: 100%;
+        height: 100%;
+    }
+
+    .mat-toolbar-1{
+        width: 100%;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        background-color: #c2185b;
+    }
+
+    mat-toolbar-row {
+        font-size: .8523rem !important;
+        color: white !important;
+    }
+    
+    .brand-wrapper {
+        padding-left: 0 !important;
+        
+    }
+    
+    .fa-shopping-cart{
+        font-size: 1rem;
+    }
+    
+    .cart-wrapper {
+        display: flex;
+        background-color: inherit !important;
+        width: 60px;
+        flex-direction: row;
+        border-radius: 3px !important;
+    }
+    
+    .item-count {
+        height: 15px !important;
+        background-color: inherit !important;
+        color: black;
+        padding-top: 1.5px;
+        padding-bottom: 1.5px;
+        padding-right: 3px;
+        padding-left: 3px;
+        margin-left: 2px;
+    }
+    
+    .cart-sub-wrapper {
+        display: inline-flex;
+    }
+    
+    /* searchbar input field*/
+      .input-group-text {
+          border-top-left-radius: 0 !important;
+          border-bottom-left-radius: 0 !important;
+          border-left: none;
+          background-color: #fba100;
+          border-color: #fba100;
+      }
+    
+      /*search bar div wrapper*/
+
+      .form-control-sm {
+        width: 80% !important;
+        border-top-left-radius: 6px !important;
+        border-bottom-left-radius: 6px !important;
+        border-color: unset;
+    
+      }
+    
+      .btn-success-sm {
+          border-radius: 5px !important;
+          color: white;
+          font-size: 1rem !important;
+      }
+    
+    
+      /* this section is for the sub header, or the call it the second mat-toolbar*/
+      .sub-header {
+          background-color: #c2185b!important;
+          height: 25px !important;
+          padding-left: 0 !important;
+      }
+
+      .brand-wrapper{
+          padding-left: none;
+      }
+
+      .bar-mobile-wrapper{
+          padding-left: -3 !important;
+          margin-left: 0 !important;
+      }
+
+      ul {
+        padding-inline-start: 1px;
+      }
+
+      li i{
+          color: black;
+      }
+
+      /* reduces the padding towards the cart*/
+      .auth-wrapper {
+        padding-right: 10px !important;
+      }
+
+      .mobile-search {
+          height: 20px !important;
+          padding-top: 0 !important;
+          padding-bottom: 10px !important;
+          margin-top: 0 !important;
+          margin-bottom: 0 !important;
+      }
+  }
+

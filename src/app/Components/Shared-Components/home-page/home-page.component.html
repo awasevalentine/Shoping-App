@@ -1,0 +1,182 @@
+<div class="main-content-wrapper">
+    <div class="container-fluid pt-4">
+
+        <div class="row">
+            <div class="col-sm-12 col-md-8">
+                <mat-carousel
+                    timings="250ms ease-in"
+                    [autoplay]="true"
+                    interval="5000"
+                    color="accent"
+                    maxWidth="auto"
+                    proportion="40"
+                    [loop]="true"
+                    [hideArrows]="false"
+                    [hideIndicators]="false"
+                    [useKeyboard]="true"
+                    [useMouseWheel]="false"
+                    orientation="ltr"
+                    >
+                <mat-carousel-slide
+                        #matCarouselSlide
+                        *ngFor="let slide of slides; let i = index"
+                        [image]="slide"
+                        overlayColor="#00000040"
+                        [hideOverlay]="true"
+                ></mat-carousel-slide>
+                </mat-carousel>
+            </div>
+
+            <div class="col-sm-12 col-md-3 carousel-wrapper ">
+                    <div class="row">
+                        <div class="col-6">
+                        <div class="card sub-carousel-wrapper">
+                            <img src="../../../../assets/sub-carousel/1(11).jpg" alt="" class="img-fluid">
+                        </div>
+                        </div>
+                        <div class="col-6">
+                        <div class="card sub-carousel-wrapper">
+                            <img src="../../../../assets/sub-carousel/1(4).jpg" alt="" class="img-fluid">
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-6">
+                        <div class="card sub-carousel-wrapper">
+                            <img src="../../../../assets/sub-carousel/1.png_BkoVw5cGu.png" alt="" class="img-fluid">
+                        </div>
+                        </div>
+                        <div class="col-6">
+                        <div class="card sub-carousel-wrapper">
+                            <img src="../../../../assets/sub-carousel/1.jpg" alt="" class="img-fluid">
+                        </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+
+<!-- this  section is for the brand and delivery underneath the carousel-->
+
+        <div class="row mt-4 mb-4" fxHide.lt-md="true">
+            <div class="col-sm-5 col-md-3">
+                <div class="card  subtile-wrapper">
+                    <a href="#">
+                        <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                        <span>
+                            Barrondy Store Locator
+
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-5 col-md-3">
+                <div class="card  subtile-wrapper">
+                    <a href="#">
+                        <i class="fa fa-truck" aria-hidden="true"></i>
+                        <span>
+                            Barrondy Delievery
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-5 col-md-3">
+                <div class="card  subtile-wrapper">
+                    <a href="#">
+                        <i class="fa fa-dashcube" aria-hidden="true"></i>
+                        <span> Barrondy Food </span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-5 col-md-3">
+                <div class="card  subtile-wrapper">
+                    <a href="#">
+                        <i class="fa fa-bandcamp" aria-hidden="true"></i>
+                        <span> Brands </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!--this is for top selling deals-->
+
+        <div class="top-deals-wrapper">
+            <div class="row top-deal-header-wrapper">
+                <div class="col-6">
+                    <h3 class="top-deal">
+                        Top Deals
+                    </h3>
+                </div>
+                <div class="col-6">
+                    <h3 class="top-deal-see-all">
+                        <a href="">See All Items</a>
+                    </h3>
+                </div>
+            </div>
+
+            <div class="top-deal-content-wrapper">
+                <div class="row">
+                    <div class="col-sm-6 col-md-4 col-lg-2" *ngFor="let item of topDeals">
+                        <div class="card mt-3 mb-1">
+                            <a href="">
+                                <img src="{{item.image}}" class="card-img-top img-fluid" alt="">
+                                <div class="card-body">
+                                    <h4 class="card-title">
+                                        {{item.itemName}}
+                                    </h4>
+                                    <p>₦ {{item.amount }}</p>
+                                </div>
+                            </a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <!--this is for recommendeproducts-->
+
+        <div class="top-deals-wrapper mt-3">
+            <div class="row top-deal-header-wrapper">
+                <div class="col-6">
+                    <h3 class="top-deal">
+                        Recommended For You
+                    </h3>
+                </div>
+                <div class="col-6">
+                    <h3 class="top-deal-see-all">
+                        <a href="">See All Items</a>
+                    </h3>
+                </div>
+            </div>
+
+            <div class="top-deal-content-wrapper">
+                <div class="row">
+                    <div class="col-sm-6 col-md-4 col-lg-2" *ngFor="let item of topDeals">
+                        <div class="card mt-3 mb-1">
+                            <a href="">
+                                <img src="{{item.image}}" class="card-img-top img-fluid" alt="">
+                                <div class="card-body">
+                                    <h4 class="card-title">
+                                        {{item.itemName}}
+                                    </h4>
+                                    <p>₦ {{item.amount }}</p>
+                                </div>
+                            </a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+</div>
