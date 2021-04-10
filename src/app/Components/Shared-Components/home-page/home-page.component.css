@@ -6,31 +6,52 @@
     padding-right: 7em;
 }
 
-.carousel-wrapper{
+.col-sm-6, .col-md-4, .col-lg-2{
+  padding: 0 7px !important;
+  line-height: 10px;
+}
+
+
+
+
+/* this section is for the display beside the carousel*/
+
+.after-carousel-wrapper{
     border-radius: 6px !important;
+    padding: 10px;
 }
 
 img {
-    width:100%;
+  object-fit: contain;
     height: 100%;
     border-radius: 5px;
+    width: 100%;
 }
 
 .sub-carousel-wrapper {
     margin-bottom: 15px;
     border-radius: 5px;
+    height: 175px;
 }
 
+
+
+
+/* section for the delievery and store location*/
+
 .subtile-wrapper {
-    width: 80%;
-    padding: 10px;
+    width: 100%;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 5px;
     border-radius: 4px;
+    height: 50px;
 }
 
 .subtile-wrapper i {
-    font-size: 20px;
+    font-size: 15px;
     border-radius: 50%;
-    padding: 10px;
+    padding: 6px;
     background-color: #c2185b;
     color: white;
 }
@@ -41,32 +62,47 @@ img {
     font-weight: bold;
 }
 
-.top-deal-header-wrapper {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    background-color: rgba(14, 13, 13, 0.842);
-    color: white;
-    border-radius: 5px;
-    
+
+
+
+
+/* Top deal banner section */
+
+.top-deals-wrapper{
+  padding: 0 15px;
+  background-color: white;
+  height: 100%;
 }
 
-.top-deal-header-wrapper a{
+.top-deal-header-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: rgba(14, 13, 13, 0.842);
+  color: white;
+  border-radius: 5px;
+}
+
+.card-img-top{ /* this is for the image height control*/
+  height: 200px;
+  object-fit: cover;
+}
+
+.top-deals-wrapper p {
+  font-weight: bolder;
+}
+
+.top-deal-header-wrapper a {
     text-decoration: none;
     color: white;
-    
 }
 
 .top-deal-header-wrapper h3 {
     margin-top: 8px;
 }
 
-
 .top-deal-see-all a {
-    display: flex;
-    justify-content: flex-end;
-
-
+    float: right;
 }
 
 .top-deal-content-wrapper a {

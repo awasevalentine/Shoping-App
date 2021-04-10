@@ -1,6 +1,8 @@
 <div class="main-content-wrapper">
     <div class="container-fluid pt-4">
 
+      <!--section for the brand carousel-->
+
         <div class="row">
             <div class="col-sm-12 col-md-8">
                 <mat-carousel
@@ -27,30 +29,24 @@
                 </mat-carousel>
             </div>
 
-            <div class="col-sm-12 col-md-3 carousel-wrapper ">
+            <!--section for the side card display after the carousel-->
+
+            <div class="col-sm-12 col-md-4 carousel-wrapper ">
                     <div class="row">
-                        <div class="col-6">
-                        <div class="card sub-carousel-wrapper">
+                        <div class="col-6 sub-carousel-wrapper">
                             <img src="../../../../assets/sub-carousel/1(11).jpg" alt="" class="img-fluid">
                         </div>
-                        </div>
-                        <div class="col-6">
-                        <div class="card sub-carousel-wrapper">
+                        <div class="col-6 sub-carousel-wrapper">
                             <img src="../../../../assets/sub-carousel/1(4).jpg" alt="" class="img-fluid">
-                        </div>
                         </div>
                     </div>
 
                     <div class="row">
-                        <div class="col-6">
-                        <div class="card sub-carousel-wrapper">
+                        <div class="col-6 sub-carousel-wrapper">
                             <img src="../../../../assets/sub-carousel/1.png_BkoVw5cGu.png" alt="" class="img-fluid">
                         </div>
-                        </div>
-                        <div class="col-6">
-                        <div class="card sub-carousel-wrapper">
+                        <div class="col-6 sub-carousel-wrapper">
                             <img src="../../../../assets/sub-carousel/1.jpg" alt="" class="img-fluid">
-                        </div>
                         </div>
                     </div>
                 </div>
@@ -59,7 +55,7 @@
 
 <!-- this  section is for the brand and delivery underneath the carousel-->
 
-        <div class="row mt-4 mb-4" fxHide.lt-md="true">
+        <div class="row mt-4 mb-4 delivery-wrapper" fxHide.lt-md="true">
             <div class="col-sm-5 col-md-3">
                 <div class="card  subtile-wrapper">
                     <a href="#">
@@ -117,9 +113,9 @@
                 </div>
             </div>
 
-            <div class="top-deal-content-wrapper">
-                <div class="row">
-                    <div class="col-sm-6 col-md-4 col-lg-2" *ngFor="let item of topDeals">
+            <!--Section for top deal items -->
+                <div class="row top-deal-content-wrapper">
+                    <div class="col-sm-6 col-md-4 col-lg-2 checkthis" *ngFor="let item of topDeals">
                         <div class="card mt-3 mb-1">
                             <a href="">
                                 <img src="{{item.image}}" class="card-img-top img-fluid" alt="">
@@ -133,7 +129,6 @@
                     </div>
                     </div>
                 </div>
-            </div>
         </div>
 
 
